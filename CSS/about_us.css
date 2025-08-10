@@ -28,6 +28,10 @@
   width: 40%;
   z-index: 2;
 }
+.data p a{
+  color: rgb(168, 86, 177);
+  
+}
 .description {
   font-size: 1.5vw;
   line-height: 1.7;
