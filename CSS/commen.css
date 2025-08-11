@@ -1,4 +1,6 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Libertinus Sans", sans-serif;
+  font-style: italic;
 }

@@ -3,7 +3,6 @@
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   position: relative;
-  
 }
 .header_about {
   text-align: center;
@@ -16,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: 70vh;
+  /* height: 70vh; */
   width: 80%;
   top: 15%;
   margin: 0 auto;
@@ -28,9 +27,13 @@
   width: 40%;
   z-index: 2;
 }
-.data p a{
+.data p a {
   color: rgb(168, 86, 177);
-  
+}
+.data p {
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid rgba(151, 149, 149, 0.642);
 }
 .description {
   font-size: 1.5vw;
@@ -48,8 +51,6 @@
   right: 0;
   width: 100%;
   margin-top: 0;
-  
-  
 }
 .about_us_section::before {
   content: "";
@@ -69,13 +70,13 @@
 .description_text,
 .rate {
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
-hr{
+/* hr{
   border: none;
   border-top: 1px solid rgba(151, 149, 149, 0.642);
   margin: 20px 0;
-}
-h1 span{
-  color:rgb(168, 86, 177);
+} */
+h1 span {
+  color: rgb(168, 86, 177);
 }
