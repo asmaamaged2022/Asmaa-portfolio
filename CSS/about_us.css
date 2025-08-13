@@ -15,9 +15,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* height: 70vh; */
+  /* height: 70%; */
   width: 80%;
-  top: 15%;
+  top: 5%;
   margin: 0 auto;
   z-index: index 2;
 }
@@ -79,4 +79,7 @@
 } */
 h1 span {
   color: rgb(168, 86, 177);
+}
+@media (max-width:480px) {
+  
 }
