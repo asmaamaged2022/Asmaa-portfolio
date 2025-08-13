@@ -15,11 +15,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* height: 70%; */
   width: 80%;
-  top: 5%;
+  top: 15%;
   margin: 0 auto;
-  z-index: index 2;
+  z-index: 2;
 }
 .data {
   font-size: 1.5vw;
@@ -37,7 +36,7 @@
 }
 .description {
   font-size: 1.5vw;
-  line-height: 1.7;
+  line-height: 1.9;
   width: 80%;
   z-index: 2;
 }
@@ -83,6 +82,7 @@ h1 span {
 @media (max-width:480px) {
   .cont{
     flex-wrap: wrap;
+     top: 5%;
   }
   .data{
     font-size: 3vw;
