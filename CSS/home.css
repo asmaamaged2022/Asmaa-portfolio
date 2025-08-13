@@ -41,9 +41,7 @@ a {
   font-size: 3.5vw;
   padding-left: 2%;
   z-index: 2;
-  /* font-weight: bold; */
   flex-grow: 1;
-  /* margin-right: 10%; */
 }
 .fa-solid.fa-code:hover {
   color: rgb(209, 124, 222);

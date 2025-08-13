@@ -45,7 +45,6 @@
   text-align: center;
   padding: 20px;
   position: absolute;
-  /* top: 5%; */
   left: 0;
   right: 0;
   width: 100%;
@@ -71,11 +70,6 @@
   position: relative;
   z-index: 2;
 }
-/* hr{
-  border: none;
-  border-top: 1px solid rgba(151, 149, 149, 0.642);
-  margin: 20px 0;
-} */
 h1 span {
   color: rgb(168, 86, 177);
 }
