@@ -26,7 +26,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   z-index: 2;
 }
 .links a:hover {
@@ -54,13 +54,16 @@ a {
   z-index: 2;
   flex-grow: 1;
 }
+.fa.fa-bars {
+  display: none;
+}
 .icons {
   display: flex;
   list-style: none;
   gap: 20%;
   z-index: 2;
   font-size: 2.5vw;
-  flex-grow:0.5;
+  flex-grow: 0.5;
 }
 a i:hover {
   color: rgb(209, 124, 222);
@@ -92,27 +95,47 @@ a i:hover {
   padding: 10px 20px;
   border-radius: 20px;
 }
-@media (max-width:480px) {
-  .header p{
+@media (max-width: 480px) {
+  .header p {
     font-size: 8vw;
+    flex-grow: 1;
   }
   .home_section h1 {
-  font-size: 8vw;
-}
-.moved_pragraph {
-  font-size: 9vw;
-}
-.static_pragraph {
-  font-size: 5vw;
-}
-.links{ 
- display: none;
-}
-.icons{ font-size: 7vw;}
-.home_section{
-  position: absolute;
-  bottom: 2%;
-}
+    font-size: 8vw;
+  }
+  .moved_pragraph {
+    font-size: 9vw;
+  }
+  .static_pragraph {
+    font-size: 5vw;
+  }
 
+  .icons {
+    font-size: 7vw;
+    flex-grow: 0.5;
+    padding-right: 5%;
+    gap: 15%;
+  }
+  .home_section {
+    position: absolute;
+    bottom: 2%;
+  }
+  .links {
+    display: none;
+  }
 
+  .fa.fa-bars {
+    display: block;
+  }
+  .fa.fa-bars:hover .links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(92, 59, 82, 0.8);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+  }
 }
