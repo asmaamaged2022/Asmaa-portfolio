@@ -15,6 +15,7 @@
   height: 100%;
   top: 0;
   left: 0;
+  pointer-events: none;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
   backdrop-filter: blur(8px);
@@ -114,7 +115,7 @@ a i:hover {
   .icons {
     font-size: 7vw;
     flex-grow: 0.5;
-    padding-right: 5%;
+    pointer-events: none;
     gap: 15%;
   }
   .home_section {
