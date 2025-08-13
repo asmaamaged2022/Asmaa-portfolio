@@ -135,7 +135,9 @@ a i:hover {
     left: 0;
     background-color: rgba(92, 59, 82, 0.8);
     padding: 10px;
-    color: white;
     border-radius: 5px;
+  }
+  i {
+    z-index: 200;
   }
 }
