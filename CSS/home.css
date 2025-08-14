@@ -99,7 +99,7 @@ a i:hover {
   border-radius: 20px;
 }
 @media (max-width: 480px) {
-  .header{
+  .header {
     position: relative;
     z-index: 300;
   }
@@ -128,18 +128,21 @@ a i:hover {
     bottom: 10vh;
   }
   .links {
-    display:inline-block;
+    display: none;
     position: absolute;
     top: 70%;
     left: 45%;
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 5vw;
-    background-color: rgba(68, 7, 51, 0.1);
-    padding: 10px 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 15px;
     z-index: 200;
-
-  } 
+  }
   .fa.fa-bars {
     display: block;
+  }
+  .fa.fa-bars:hover {
+    color: rgb(209, 124, 222);
   }
 }
