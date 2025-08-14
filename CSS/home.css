@@ -63,7 +63,7 @@ a {
 .icons {
   display: flex;
   list-style: none;
-  gap: 20%;
+  gap: 15%;
   z-index: 2;
   font-size: 2.5vw;
   flex-grow: 0.5;
