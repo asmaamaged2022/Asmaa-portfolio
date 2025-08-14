@@ -82,7 +82,10 @@ h1 span {
     font-size: 3vw;
     width: 100%;
   }
-
+.background_for_about{
+  font-size: 20vw;
+  top: 30%;
+}
   .description {
     font-size: 3vw;
     line-height: 1.8;
