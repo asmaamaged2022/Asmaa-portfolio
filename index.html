@@ -104,12 +104,25 @@
       document.addEventListener("DOMContentLoaded", function () {
         const bars = document.querySelector(".fa.fa-bars");
         const links = document.querySelector(".links");
-        if (bars && links) {
-          bars.addEventListener("click", function () {
+
+        function toggleLinks() {
+          if (window.innerWidth <= 480) {
+            // الكود يشتغل فقط على الشاشات الصغيرة
             if (links.style.display === "inline-block") {
               links.style.display = "none";
             } else {
               links.style.display = "inline-block";
+            }
+          }
+        }
+
+        if (bars && links) {
+          bars.addEventListener("click", toggleLinks);
+
+          // عند تغيير حجم الشاشة، اخفي القائمة تلقائياً لو كبرت الشاشة
+          window.addEventListener("resize", function () {
+            if (window.innerWidth > 480) {
+              links.style.display = "";
             }
           });
         }
