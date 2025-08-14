@@ -79,7 +79,7 @@ h1 span {
     top: 5%;
   }
   .data {
-    font-size: 3vw;
+    font-size: 5vw;
     width: 100%;
   }
 .background_for_about{
@@ -87,12 +87,15 @@ h1 span {
   top: 30%;
 }
   .description {
-    font-size: 3vw;
-    line-height: 1.8;
+    font-size: 5vw;
+    line-height: 1.6;
     width: 100%;
     padding: 5%;
   }
   .header_about {
-    font-size: 9vw;
+    font-size: 10vw;
+  }
+  .about_us_section {
+    height: auto;
   }
 }
