@@ -94,8 +94,9 @@ a i:hover {
   font-size: 1.5vw;
 }
 .hire_me {
-  background-color: rgba(237, 129, 218, 0.3);
-  box-shadow: 5px 5px 25px  rgb(200, 120, 209);;
+  /* background-color: rgba(237, 129, 218, 0.3); */
+  box-shadow: 1px 1px 15px 3px rgb(118, 69, 123) inset,
+    1px 1px 35px 3px rgb(249, 166, 254) inset, 1px 1px 15px 3px rgb(191, 89, 202);
   padding: 10px 20px;
   border-radius: 20px;
 }

@@ -62,7 +62,7 @@
   width: 400px;
   height: 300px;
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgb(200, 120, 209);
+  box-shadow: 3px 3px 15px 2px rgb(205, 114, 215);
   position: relative;
 }
 .work1:hover,
