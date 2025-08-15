@@ -95,7 +95,7 @@ a i:hover {
 }
 .hire_me {
   background-color: rgba(237, 129, 218, 0.3);
-  box-shadow: 5px 5px 25px rgb(245, 151, 255);
+  box-shadow: 5px 5px 25px  rgb(200, 120, 209);;
   padding: 10px 20px;
   border-radius: 20px;
 }
