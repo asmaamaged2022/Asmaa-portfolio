@@ -6,7 +6,7 @@
   position: relative;
 }
 .background_for_work {
-  font-size: 6vw;
+  font-size: 9vw;
   position: relative;
   text-align: center;
   padding: 2% 0;
@@ -26,37 +26,20 @@
   backdrop-filter: blur(3px);
 }
 .WorkBox .header,
-.WorkBox .cont,
 .WorkBox .work {
   position: relative;
   z-index: 3;
 }
 .WorkBox .header {
-  font-size: 4vw;
+  font-size: 5vw;
   position: relative;
   text-align: center;
-  bottom: 15vh;
-}
-.WorkBox .cont {
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-  list-style: none;
-  gap: 2%;
-  font-size: 1.6vw;
-  position: relative;
   bottom: 20vh;
 }
-.WorkBox .cont li {
-  border-bottom: 2px solid transparent;
-}
-.WorkBox .cont  li:hover {
-  color: rgb(173, 52, 130);
-  border-bottom: 2px solid rgb(173, 52, 130);
-}
+
 .work {
   position: relative;
-  bottom: 15vh;
+  bottom: 10vh;
   width: 100%;
   padding: 5vh;
   display: flex;
@@ -79,7 +62,7 @@
   width: 400px;
   height: 300px;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px rgb(255, 255, 255);
+  box-shadow: 3px 3px 20px rgb(245, 151, 255);
   position: relative;
 }
 .work1:hover,
@@ -155,11 +138,6 @@
     bottom: 10vh;
     font-size: 8vw;
   }
-  .WorkBox .cont {
-    bottom: 10vh;
-    gap: 3vh;
-    font-size: 4.5vw;
-  }
   .background_for_work {
     font-size: 15vw;
     top: 5vh;
@@ -185,16 +163,11 @@
     max-width: 100%;
   }
   .background_for_work {
-    font-size: 15vw;
-    top: 5vh;
+    font-size: 18vw;
+    top: 10vh;
   }
   .WorkBox .header {
-    font-size: 10vw;
-    margin-top: 5vh;
-  }
-  .WorkBox .cont {
-    font-size: 5vw;
-    bottom: 8vh;
-    gap: 2.5vh;
+    font-size: 15vw;
+   bottom: 5vh;
   }
 }
