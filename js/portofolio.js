@@ -37,31 +37,41 @@ let desc3 = document.getElementById("desc3").textContent;
 let desc4 = document.getElementById("desc4").textContent;
 let desc5 = document.getElementById("desc5").textContent;
 let desc6 = document.getElementById("desc6").textContent;
+let title1 = document.getElementById("title1").textContent;
+let link1 = document.getElementById("link1");
+let link2 = document.getElementById("link2");
+let link3 = document.getElementById("link3");
+let link4 = document.getElementById("link4");
+let link5 = document.getElementById("link5");
+let link6 = document.getElementById("link6");
+
 work1.addEventListener("click", function () {
-  showModal("work1", "project1", desc1);
+  showModal("work1", title1, desc1, link1);
 });
 work2.addEventListener("click", function () {
-  showModal("work2", "project2", desc2);
+  showModal("work2", "project2", desc2, link2);
 });
 work3.addEventListener("click", function () {
-  showModal("work3", "project3", desc3);
+  showModal("work3", "project3", desc3, link3);
 });
 work4.addEventListener("click", function () {
-  showModal("work4", "project4", desc4);
+  showModal("work4", "project4", desc4, link4);
 });
 work5.addEventListener("click", function () {
-  showModal("work5", "project5", desc5);
+  showModal("work5", "project5", desc5, link5);
 });
 work6.addEventListener("click", function () {
-  showModal("work6", "project6", desc6);
+  showModal("work6", "project6", desc6, link6);
 });
-function showModal(imageId, title, desc) {
+function showModal(imageId, title, desc, link) {
   let modal = document.getElementById("myModal");
   let modalImg = document.getElementById("MyImg");
   let modalTitle = document.getElementById("modalTitle");
   let modalDescription = document.getElementById("description");
+  let modalLink = document.getElementById("githubLink");
   modalTitle.textContent = title;
   modalDescription.textContent = desc;
+  modalLink.href = link.href;
   let img = document.getElementById(imageId);
   modalImg.src = img.querySelector("img").src;
   modal.style.display = "block";
