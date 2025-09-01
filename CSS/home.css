@@ -29,7 +29,6 @@
   align-items: center;
   justify-content: space-around;
   position: relative;
-
   z-index: 2;
 }
 .links a:hover {
@@ -63,10 +62,12 @@ a {
 .icons {
   display: flex;
   list-style: none;
-  gap: 15%;
+  gap: 10%;
   z-index: 2;
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   flex-grow: 0.5;
+  position: relative;
+  left: 5%;
 }
 a i:hover {
   color: rgb(209, 124, 222);
@@ -94,9 +95,9 @@ a i:hover {
   font-size: 1.5vw;
 }
 .hire_me {
-  /* background-color: rgba(237, 129, 218, 0.3); */
   box-shadow: 1px 1px 15px 3px rgb(118, 69, 123) inset,
-    1px 1px 35px 3px rgb(249, 166, 254) inset, 1px 1px 15px 3px rgb(191, 89, 202);
+    1px 1px 35px 3px rgb(249, 166, 254) inset,
+    1px 1px 15px 3px rgb(191, 89, 202);
   padding: 10px 20px;
   border-radius: 20px;
 }

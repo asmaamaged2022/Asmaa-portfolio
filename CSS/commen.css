@@ -5,3 +5,14 @@
   font-family: "Libertinus Sans", sans-serif;
   font-style: italic;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(140, 32, 133, 0.9);
+border-radius: 5px;}
+
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+
+}

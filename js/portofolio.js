@@ -1,0 +1,75 @@
+// home
+document.addEventListener("DOMContentLoaded", function () {
+  const bars = document.querySelector(".fa.fa-bars");
+  const links = document.querySelector(".links");
+
+  function toggleLinks() {
+    if (window.innerWidth <= 480) {
+      if (links.style.display === "inline-block") {
+        links.style.display = "none";
+      } else {
+        links.style.display = "inline-block";
+      }
+    }
+  }
+
+  if (bars && links) {
+    bars.addEventListener("click", toggleLinks);
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 480) {
+        links.style.display = "";
+      }
+    });
+  }
+});
+// portofolio
+
+let work1 = document.getElementById("work1");
+let work2 = document.getElementById("work2");
+let work3 = document.getElementById("work3");
+let work4 = document.getElementById("work4");
+let work5 = document.getElementById("work5");
+let work6 = document.getElementById("work6");
+let desc1 = document.getElementById("desc1").textContent;
+let desc2 = document.getElementById("desc2").textContent;
+let desc3 = document.getElementById("desc3").textContent;
+let desc4 = document.getElementById("desc4").textContent;
+let desc5 = document.getElementById("desc5").textContent;
+let desc6 = document.getElementById("desc6").textContent;
+work1.addEventListener("click", function () {
+  showModal("work1", "project1", desc1);
+});
+work2.addEventListener("click", function () {
+  showModal("work2", "project2", desc2);
+});
+work3.addEventListener("click", function () {
+  showModal("work3", "project3", desc3 );
+});
+work4.addEventListener("click", function () {
+  showModal("work4", "project4", desc4);
+});
+work5.addEventListener("click", function () {
+  showModal("work5", "project5", desc5);
+});
+work6.addEventListener("click", function () {
+  showModal("work6", "project6", desc6);
+});
+function showModal(imageId, title, desc) {
+  let modal = document.getElementById("myModal");
+  let modalImg = document.getElementById("MyImg");
+  let modalTitle = document.getElementById("modalTitle");
+  let modalDesc = document.getElementById("descTitle");
+  modalTitle.textContent = title;
+  modalDesc.textContent = desc;
+  let img = document.getElementById(imageId);
+  modalImg.src = img.querySelector("img").src;
+  modal.style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+let closeModal = document.getElementById("closeModal");
+closeModal.addEventListener("click", function () {
+  let modal = document.getElementById("myModal");
+  modal.style.display = "none";
+  document.body.style.overflow = "";
+});
