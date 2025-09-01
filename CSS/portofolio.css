@@ -199,6 +199,14 @@
     top: 10px;
     right: 30px;
   }
+  #desc1,
+  #desc2,
+  #desc3,
+  #desc4,
+  #desc5,
+  #desc6 {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -275,6 +283,14 @@
     font-size: 35px;
     top: 20px;
     right: 20px;
+  }
+  #desc1,
+  #desc2,
+  #desc3,
+  #desc4,
+  #desc5,
+  #desc6 {
+    display: none;
   }
 }
 .modal {

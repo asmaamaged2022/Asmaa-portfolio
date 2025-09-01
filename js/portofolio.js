@@ -44,7 +44,7 @@ work2.addEventListener("click", function () {
   showModal("work2", "project2", desc2);
 });
 work3.addEventListener("click", function () {
-  showModal("work3", "project3", desc3 );
+  showModal("work3", "project3", desc3);
 });
 work4.addEventListener("click", function () {
   showModal("work4", "project4", desc4);
@@ -59,9 +59,9 @@ function showModal(imageId, title, desc) {
   let modal = document.getElementById("myModal");
   let modalImg = document.getElementById("MyImg");
   let modalTitle = document.getElementById("modalTitle");
-  let modalDesc = document.getElementById("descTitle");
+  let modalDescription = document.getElementById("description");
   modalTitle.textContent = title;
-  modalDesc.textContent = desc;
+  modalDescription.textContent = desc;
   let img = document.getElementById(imageId);
   modalImg.src = img.querySelector("img").src;
   modal.style.display = "block";
