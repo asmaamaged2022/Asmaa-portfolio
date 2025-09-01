@@ -139,10 +139,10 @@
     margin-top: 10vh;
     position: relative;
   }
-  .onPhoto {
+  /* .onPhoto {
     font-size: 6vw;
     bottom: 40%;
-  }
+  } */
 
   .work1,
   .work2,
@@ -328,6 +328,18 @@
 
   .modal::-webkit-scrollbar-track {
     background: rgb(0, 0, 0);
+  }
+  .onPhoto {
+    display: block;
+    font-size: 5vw;
+  }
+  .work1 img,
+  .work2 img,
+  .work3 img,
+  .work4 img,
+  .work5 img,
+  .work6 img {
+    filter: brightness(0.5);
   }
 }
 .modal {
