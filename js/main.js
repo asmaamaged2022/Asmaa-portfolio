@@ -159,14 +159,23 @@ closeModal.addEventListener("click", function () {
   toTop.style.display = "flex";
 });
 
-// skills
 let skillsSection = document.getElementById("skills");
 let spans = document.querySelectorAll(".progress span");
-window.onscroll = function () {
-  if (window.scrollY >= skillsSection.offsetTop - 400) {
+
+window.addEventListener("scroll", function () {
+  let sectionTop = skillsSection.offsetTop;
+  let sectionHeight = skillsSection.offsetHeight;
+  let scrollY = window.scrollY;
+  let windowHeight = window.innerHeight;
+
+  if (scrollY + windowHeight >= sectionTop && scrollY <= sectionTop + sectionHeight) {
     spans.forEach((span) => {
       let width = span.dataset.width;
       span.style.width = width;
     });
+  } else {
+    spans.forEach((span) => {
+      span.style.width = "0";
+    });
   }
-};
+});
