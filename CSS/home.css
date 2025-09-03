@@ -28,8 +28,9 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
 }
 .links a:hover {
   color: rgb(209, 124, 222);

@@ -23,6 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+let homeheader = document.getElementById("homeheader");
+function Headercolor() {
+  if (window.scrollY > 0) {
+    homeheader.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+  } else {
+    homeheader.style.backgroundColor = "";
+  }
+}
+window.addEventListener("scroll", Headercolor);
 // portofolio
 
 let work1 = document.getElementById("work1");
