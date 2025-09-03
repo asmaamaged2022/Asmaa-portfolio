@@ -1,4 +1,4 @@
-//عام
+//General
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -29,7 +29,7 @@ toTop.addEventListener("click", function () {
   });
 });
 
-// home
+// home icon responsive
 document.addEventListener("DOMContentLoaded", function () {
   const bars = document.querySelector(".fa.fa-bars");
   const links = document.querySelector(".links");
@@ -54,15 +54,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-// let homeheader = document.getElementById("homeheader");
-// function Headercolor() {
-//   if (window.scrollY > 0) {
-//     homeheader.style.backgroundColor = "rgb(0, 0, 0)";
-//   } else {
-//     homeheader.style.backgroundColor = "";
-//   }
-// }
-// window.addEventListener("scroll", Headercolor);
+///nav bar
+let homeheader = document.getElementById("homeheader");
+function Headercolor() {
+  if (window.scrollY > 0) {
+    homeheader.style.backgroundColor = "rgb(0, 0, 0)";
+  } else {
+    homeheader.style.backgroundColor = "";
+  }
+}
+window.addEventListener("scroll", Headercolor);
 
 ///
 // typing effect
@@ -99,28 +100,15 @@ typeEffect();
 let work1 = document.getElementById("work1");
 let work2 = document.getElementById("work2");
 let work3 = document.getElementById("work3");
-let work4 = document.getElementById("work4");
-let work5 = document.getElementById("work5");
-let work6 = document.getElementById("work6");
 let desc1 = document.getElementById("desc1").textContent;
 let desc2 = document.getElementById("desc2").textContent;
 let desc3 = document.getElementById("desc3").textContent;
-let desc4 = document.getElementById("desc4").textContent;
-let desc5 = document.getElementById("desc5").textContent;
-let desc6 = document.getElementById("desc6").textContent;
 let title1 = document.getElementById("title1").textContent;
 let title2 = document.getElementById("title2").textContent;
 let title3 = document.getElementById("title3").textContent;
-let title4 = document.getElementById("title4").textContent;
-let title5 = document.getElementById("title5").textContent;
-let title6 = document.getElementById("title6").textContent;
 let link1 = document.getElementById("link1");
 let link2 = document.getElementById("link2");
 let link3 = document.getElementById("link3");
-let link4 = document.getElementById("link4");
-let link5 = document.getElementById("link5");
-let link6 = document.getElementById("link6");
-
 work1.addEventListener("click", function () {
   showModal("work1", title1, desc1, link1);
 });
@@ -129,15 +117,6 @@ work2.addEventListener("click", function () {
 });
 work3.addEventListener("click", function () {
   showModal("work3", title3, desc3, link3);
-});
-work4.addEventListener("click", function () {
-  showModal("work4", title4, desc4, link4);
-});
-work5.addEventListener("click", function () {
-  showModal("work5", title5, desc5, link5);
-});
-work6.addEventListener("click", function () {
-  showModal("work6", title6, desc6, link6);
 });
 function showModal(imageId, title, desc, link) {
   let modal = document.getElementById("myModal");
@@ -152,7 +131,7 @@ function showModal(imageId, title, desc, link) {
   modalImg.src = img.querySelector("img").src;
   modal.style.display = "block";
   document.body.style.overflow = "hidden";
-  // homeheader.style.display = "none";
+  homeheader.style.display = "none";
   toTop.style.display = "none";
 }
 let closeModal = document.getElementById("closeModal");
@@ -160,9 +139,10 @@ closeModal.addEventListener("click", function () {
   let modal = document.getElementById("myModal");
   modal.style.display = "none";
   document.body.style.overflow = "";
-  // homeheader.style.display = "flex";
+  homeheader.style.display = "flex";
   toTop.style.display = "flex";
 });
+////skills
 
 let skillsSection = document.getElementById("skills");
 let spans = document.querySelectorAll(".progress span");
