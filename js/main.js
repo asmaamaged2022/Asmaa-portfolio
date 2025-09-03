@@ -32,6 +32,49 @@ function Headercolor() {
   }
 }
 window.addEventListener("scroll", Headercolor);
+
+///
+// let nameElement = document.getElementById("name");
+//   let toggle = true;
+
+//   setInterval(() => {
+//     if (toggle) {
+//       nameElement.textContent = "Programmer";
+//     } else {
+//       nameElement.textContent = "Asmaa";
+//     }
+//     toggle = !toggle;
+//   }, 2000); // كل ثانيتين
+ let nameElement = document.getElementById("name");
+  let texts = ["I'm Asmaa", "I'm Programmer"];
+  let textIndex = 0;
+  let charIndex = 0;
+  let deleting = false;
+
+  function typeEffect() {
+    let currentText = texts[textIndex];
+
+    if (!deleting) {
+      // بيكتب حرف حرف
+      nameElement.textContent = currentText.slice(0, charIndex++);
+      if (charIndex > currentText.length) {
+        deleting = true; 
+        setTimeout(typeEffect, 1500); // يستنى شوية قبل ما يمسح
+        return;
+      }
+    } else {
+      // بيمسح حرف حرف
+      nameElement.textContent = currentText.slice(0, charIndex--);
+      if (charIndex < 0) {
+        deleting = false;
+        textIndex = (textIndex + 1) % texts.length; // يغير الكلمة
+        charIndex = 0;
+      }
+    }
+    setTimeout(typeEffect, deleting ? 100 : 150); // سرعة الكتابة/المسح
+  }
+
+  typeEffect();
 // portofolio
 
 let work1 = document.getElementById("work1");
@@ -85,10 +128,25 @@ function showModal(imageId, title, desc, link) {
   modalImg.src = img.querySelector("img").src;
   modal.style.display = "block";
   document.body.style.overflow = "hidden";
+  homeheader.style.display = "none";
 }
 let closeModal = document.getElementById("closeModal");
 closeModal.addEventListener("click", function () {
   let modal = document.getElementById("myModal");
   modal.style.display = "none";
   document.body.style.overflow = "";
+  homeheader.style.display = "flex";
+
 });
+
+// skills
+let skillsSection = document.getElementById("skills");
+let spans = document.querySelectorAll(".progress span");
+window.onscroll = function () {
+  if (window.scrollY >= skillsSection.offsetTop - 400) {
+    spans.forEach(span => {
+      let width = span.dataset.width;
+      span.style.width = width;
+    });
+  }
+};

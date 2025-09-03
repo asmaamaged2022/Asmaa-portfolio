@@ -25,6 +25,7 @@
 .header {
   padding: 10px;
   width: 100%;
+  height: 9vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -75,8 +76,9 @@ a i:hover {
 }
 /* body of home */
 .home_section {
-  width: 100%;
-  height: 100vh;
+  /* width: 100%; */
+  /* height: 100vh; */
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,12 +87,15 @@ a i:hover {
   position: relative;
   z-index: 2;
   gap: 30px;
+  transform: translate(0, 100%);
 }
 .home_section h1 {
   font-size: 3vw;
 }
 .moved_pragraph {
   font-size: 4vw;
+  height: 40px;
+  margin-bottom: 10px;
 }
 .static_pragraph {
   font-size: 1.5vw;
@@ -149,9 +154,9 @@ a i:hover {
   .links li {
     margin: 10px 0;
     padding: 5px 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
-  .links li:last-child{
+  .links li:last-child {
     border-bottom: none;
     margin-bottom: 0;
   }
@@ -162,4 +167,89 @@ a i:hover {
   .fa.fa-bars:hover {
     color: rgb(209, 124, 222);
   }
+}
+.midarrow {
+  position: absolute;
+  bottom: 4vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: white;
+  z-index: 100;
+}
+.midarrow span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 2px 0;
+  animation: downArrow 1.5s infinite;
+}
+@keyframes downArrow {
+  0% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(5px) rotate(45deg);
+  }
+  100% {
+    transform: translateY(0) rotate(45deg);
+  }
+}
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  left: 10vh;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  z-index: 100;
+}
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  right: 10vh;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  z-index: 100;
+}
+
+.leftArrow span,
+.rightArrow span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 2px 0;
+  transform: rotate(45deg);
+  /* transition: all 0.6s ease; */
+  animation: sideArrow 0.5s infinite;
+  animation-direction: alternate;
+  opacity: 1;
+}
+.leftArrow .one,
+.rightArrow .one {
+   animation-delay: 0s;
+}
+.leftArrow .two,
+.rightArrow .two {
+  animation-delay: 0.2s;
+}
+.leftArrow .three,
+.rightArrow .three {
+   animation-delay: 0.4s;
+
+}
+@keyframes sideArrow {
+  to{
+    transform: translateY(5px) rotate(45deg);
+    opacity: 0.4;
+  }
+
 }
