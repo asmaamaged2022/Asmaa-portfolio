@@ -108,7 +108,7 @@ a i:hover {
 }
 @media (max-width: 480px) {
   .header {
-    position: relative;
+    position: fixed;
     z-index: 300;
   }
   .header p {
@@ -139,15 +139,23 @@ a i:hover {
     display: none;
     position: absolute;
     top: 80%;
-    right: 5px;
     color: white;
     font-size: 5vw;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 5px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    z-index: 200;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 100%;
+    z-index: 10001;
   }
+  .links li {
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+  }
+  .links li:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
   .fa.fa-bars {
     display: block;
   }
