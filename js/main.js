@@ -109,6 +109,11 @@ let desc4 = document.getElementById("desc4").textContent;
 let desc5 = document.getElementById("desc5").textContent;
 let desc6 = document.getElementById("desc6").textContent;
 let title1 = document.getElementById("title1").textContent;
+let title2 = document.getElementById("title2").textContent;
+let title3 = document.getElementById("title3").textContent;
+let title4 = document.getElementById("title4").textContent;
+let title5 = document.getElementById("title5").textContent;
+let title6 = document.getElementById("title6").textContent;
 let link1 = document.getElementById("link1");
 let link2 = document.getElementById("link2");
 let link3 = document.getElementById("link3");
@@ -120,19 +125,19 @@ work1.addEventListener("click", function () {
   showModal("work1", title1, desc1, link1);
 });
 work2.addEventListener("click", function () {
-  showModal("work2", "project2", desc2, link2);
+  showModal("work2", title2, desc2, link2);
 });
 work3.addEventListener("click", function () {
-  showModal("work3", "project3", desc3, link3);
+  showModal("work3", title3, desc3, link3);
 });
 work4.addEventListener("click", function () {
-  showModal("work4", "project4", desc4, link4);
+  showModal("work4", title4, desc4, link4);
 });
 work5.addEventListener("click", function () {
-  showModal("work5", "project5", desc5, link5);
+  showModal("work5", title5, desc5, link5);
 });
 work6.addEventListener("click", function () {
-  showModal("work6", "project6", desc6, link6);
+  showModal("work6", title6, desc6, link6);
 });
 function showModal(imageId, title, desc, link) {
   let modal = document.getElementById("myModal");
@@ -168,7 +173,10 @@ window.addEventListener("scroll", function () {
   let scrollY = window.scrollY;
   let windowHeight = window.innerHeight;
 
-  if (scrollY + windowHeight >= sectionTop && scrollY <= sectionTop + sectionHeight) {
+  if (
+    scrollY + windowHeight >= sectionTop &&
+    scrollY <= sectionTop + sectionHeight
+  ) {
     spans.forEach((span) => {
       let width = span.dataset.width;
       span.style.width = width;
