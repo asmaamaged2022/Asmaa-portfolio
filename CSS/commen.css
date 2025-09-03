@@ -11,9 +11,13 @@
 
 ::-webkit-scrollbar-thumb {
   background-color: rgba(156, 65, 150, 0.9);
-border-radius: 5px;}
+border-radius: 5px;
+}
 
 ::-webkit-scrollbar-track {
   background: rgb(0, 0, 0);
 
+}
+.html{
+  scroll-behavior: smooth;
 }
