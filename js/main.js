@@ -148,6 +148,7 @@ function showModal(imageId, title, desc, link) {
   modal.style.display = "block";
   document.body.style.overflow = "hidden";
   // homeheader.style.display = "none";
+  toTop.style.display = "none";
 }
 let closeModal = document.getElementById("closeModal");
 closeModal.addEventListener("click", function () {
@@ -155,6 +156,7 @@ closeModal.addEventListener("click", function () {
   modal.style.display = "none";
   document.body.style.overflow = "";
   // homeheader.style.display = "flex";
+  toTop.style.display = "flex";
 });
 
 // skills
