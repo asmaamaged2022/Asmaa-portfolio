@@ -1,0 +1,108 @@
+.contact {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: auto;
+  color: white;
+  position: relative;
+}
+.background_for_contact {
+  font-size: 9vw;
+  position: relative;
+  text-align: center;
+  padding: 2% 0;
+  z-index: 1;
+  transform: translateY(-10%);
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  backdrop-filter: blur(3px);
+}
+.contact .contactUsHeader,
+.contact form,
+.contact .social,
+.contact .footer {
+  position: relative;
+  z-index: 3;
+}
+.contact .contactUsHeader {
+  font-size: 5vw;
+  position: relative;
+  text-align: center;
+  bottom: 20vh;
+}
+form {
+  position: relative;
+  bottom: 10vh;
+  width: 100%;
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+}
+form input[type="text"],
+form textarea,
+form input[type="email"] {
+  width: 50%;
+  padding: 1vh;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 2vw;
+  transition: all 0.3s ease;
+}
+form input::placeholder,
+form textarea::placeholder {
+  color: rgb(255, 255, 255, 0.5);
+}
+form input[type="text"]:focus,
+form textarea:focus,
+form input[type="email"]:focus {
+  background: rgba(247, 133, 239, 0.4);
+  outline: none;
+  box-shadow: 1px 1px 15px rgb(244, 127, 203);
+}
+form button {
+  padding: 1vh 3vh;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(172, 58, 190);
+  color: white;
+  font-size: 2vw;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  box-shadow: 1px 1px 15px rgb(244, 127, 203);
+  transform: scale(1.05);
+}
+.contact .social {
+  position: relative;
+  bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 2vw;
+}
+.contact .social a i:hover {
+  color: rgb(209, 124, 222);
+  transform: scale(1.1);
+}
+.contact .footer {
+  text-align: center;
+  padding: 2vh 0;
+  font-size: 1.5vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 50px;
+}

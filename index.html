@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/what_i_do.css" />
     <link rel="stylesheet" href="CSS/commen.css" />
     <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/contactUs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -27,12 +28,11 @@
           <p><i class="fa-solid fa-code"></i></p>
 
           <ul class="links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#">What I Do</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
             <li><a href="#portfolio">portofolio</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#skills">My skills</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
           <ul class="icons">
             <li>
@@ -61,7 +61,7 @@
           <h1>Welcome</h1>
           <p class="moved_pragraph">I'm Asmaa</p>
           <p class="static_pragraph">based in Egypt, Cairo.</p>
-          <a class="hire_me" href="#">Hire Me</a>
+          <a class="hire_me" href="#contact">Hire Me</a>
         </div>
       </div>
       <!-- end home -->
@@ -98,9 +98,6 @@
         <div class="rate"></div>
       </div>
       <!-- end About us -->
-      <!-- start What i do -->
-
-      <!-- end What i do -->
       <!-- start portfolio -->
       <div class="WorkBox" id="portfolio">
         <div class="modal" id="myModal">
@@ -112,27 +109,7 @@
             </div>
             <div class="right">
               <p id="description"></p>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/asmaa.maged.2022"
-                    target="_blank"
-                    ><i class="fa-brands fa-facebook"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://github.com/asmaamaged2022" target="_blank"
-                    ><i class="fa-brands fa-github"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/asmaa-maged-a53a28347/"
-                    target="_blank"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
-                </li>
-              </ul>
+
               <a href="" id="githubLink" target="_blank">project Link</a>
             </div>
           </div>
@@ -151,9 +128,9 @@
               A simple calculator application built using HTML, CSS, and
               JavaScript. It provides basic arithmetic operations such as
               addition, subtraction, multiplication, and division. The user
-              interface is designed to be user-friendly and responsive,
-              allowing users to perform calculations easily on both desktop and
-              mobile devices.
+              interface is designed to be user-friendly and responsive, allowing
+              users to perform calculations easily on both desktop and mobile
+              devices.
             </p>
             <a
               href="https://asmaamaged2022.github.io/Calculator/"
@@ -244,8 +221,39 @@
       </div>
       <!-- end portfolio -->
       <!-- end portfolio -->
-      <!-- start Resume -->
-      <!-- end Resume -->
+      <!-- start skills -->
+       
+      <!-- end skils -->
+      <!-- start contact us  -->
+      <div class="contact" id="contact">
+        <h1 class="background_for_contact">Contact</h1>
+        <h2 class="contactUsHeader">Get in Touch</h2>
+        <form action="">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="social">
+          <p>Follow us on social media:</p>
+          <a href="https://www.facebook.com/asmaa.maged.2022" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://github.com/asmaamaged2022" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/asmaa-maged-a53a28347/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="mailto:asmaamaged96@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+        <p class="footer">© 2024 Asmaa Maged. All rights reserved.</p>
+      </div>
+      <!-- end contact us  -->
     </div>
     <script src="js/portofolio.js"></script>
   </body>

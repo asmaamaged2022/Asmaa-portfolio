@@ -100,6 +100,10 @@ a i:hover {
     1px 1px 15px 3px rgb(191, 89, 202);
   padding: 10px 20px;
   border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.hire_me:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 480px) {
   .header {
