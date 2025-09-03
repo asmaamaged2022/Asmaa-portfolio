@@ -16,8 +16,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 //to top
 let toTop = document.querySelector(".toTop");
 window.addEventListener("scroll", function () {
-  if (window.scrollY >= 700) {
+  if (window.scrollY >= 600) {
     toTop.style.display = "flex";
+  } else {
+    toTop.style.display = "none";
   }
 });
 toTop.addEventListener("click", function () {
