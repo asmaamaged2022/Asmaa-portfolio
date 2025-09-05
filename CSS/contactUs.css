@@ -106,36 +106,35 @@ form button:hover {
   height: 50px;
 }
 @media (max-width: 480px) {
-  .background_for_contact{
+  .background_for_contact {
     font-size: 25vw;
   }
- .contact .contactUsHeader{
-  font-size: 12vw;
-  bottom :20vw;
+  .contact .contactUsHeader {
+    font-size: 12vw;
+    bottom: 20vw;
   }
   form input[type="text"],
-form textarea,
-form input[type="email"]{
-  width: 95%;
-  height: 40px;
+  form textarea,
+  form input[type="email"] {
+    width: 95%;
+    height: 40px;
     font-size: 6vw;
-
-}
-form input::placeholder,
-form textarea::placeholder{
-  font-size: 5vw;
-}
-form button{
-  width: 50%;
-  height: 30px;
-  font-size: 4vw;
-}
-.contact .social{
-  font-size: 5.5vw;
-  gap: 10px;
-}
-.contact .footer{
-  font-size: 4vw;
-  height: 45px;
-}
+  }
+  form input::placeholder,
+  form textarea::placeholder {
+    font-size: 5vw;
+  }
+  form button {
+    width: 50%;
+    height: 30px;
+    font-size: 4vw;
+  }
+  .contact .social {
+    font-size: 5.5vw;
+    gap: 10px;
+  }
+  .contact .footer {
+    font-size: 4vw;
+    height: 45px;
+  }
 }
