@@ -118,6 +118,8 @@ form textarea,
 form input[type="email"]{
   width: 95%;
   height: 40px;
+    font-size: 7vw;
+
 }
 form input::placeholder,
 form textarea::placeholder{
