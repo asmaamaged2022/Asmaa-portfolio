@@ -263,7 +263,4 @@ a i:hover {
       width: 10px;
     height: 10px;
   }
-   *:hover {
-    all:unset !important;
-  }
 }
