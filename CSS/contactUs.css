@@ -59,6 +59,7 @@ form input[type="email"] {
   color: white;
   font-size: 2vw;
   transition: all 0.3s ease;
+  resize: none;
 }
 form input::placeholder,
 form textarea::placeholder {
