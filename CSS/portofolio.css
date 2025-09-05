@@ -35,7 +35,6 @@
   position: relative;
   text-align: center;
   bottom: 20vh;
-  transform: translateY(-150%);
 }
 
 .work {
@@ -57,10 +56,7 @@
 }
 .work1,
 .work2,
-.work3,
-.work4,
-.work5,
-.work6 {
+.work3 {
   width: 400px;
   height: 300px;
   border-radius: 10px;
@@ -69,10 +65,7 @@
 }
 .work1:hover,
 .work2:hover,
-.work3:hover,
-.work4:hover,
-.work5:hover,
-.work6:hover {
+.work3:hover {
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
@@ -91,34 +84,22 @@
 }
 .work1:hover .onPhoto,
 .work2:hover .onPhoto,
-.work3:hover .onPhoto,
-.work4:hover .onPhoto,
-.work5:hover .onPhoto,
-.work6:hover .onPhoto {
+.work3:hover .onPhoto {
   display: block;
 }
 .work1:hover img,
 .work2:hover img,
-.work3:hover img,
-.work4:hover img,
-.work5:hover img,
-.work6:hover img {
+.work3:hover img {
   filter: brightness(0.5);
 }
 #desc1,
 #desc2,
-#desc3,
-#desc4,
-#desc5,
-#desc6 {
+#desc3 {
   display: none;
 }
 #link1,
 #link2,
-#link3,
-#link4,
-#link5,
-#link6 {
+#link3 {
   display: none;
 }
 #githubLink {
@@ -131,221 +112,6 @@
   border-radius: 20px;
   padding: 10px;
   text-align: center;
-}
-@media (max-width: 768px) {
-  .work {
-    flex-direction: column;
-    gap: 10vh;
-    margin-top: 10vh;
-    position: relative;
-  }
-  /* .onPhoto {
-    font-size: 6vw;
-    bottom: 40%;
-  } */
-
-  .work1,
-  .work2,
-  .work3,
-  .work4,
-  .work5,
-  .work6 {
-    width: 70vw;
-    max-width: 100%;
-    height: 45vw;
-    min-height: 180px;
-    margin: 0 auto;
-  }
-
-  .work img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .WorkBox .header {
-    bottom: 10vh;
-    font-size: 8vw;
-  }
-  .background_for_work {
-    font-size: 15vw;
-    top: 5vh;
-  }
-  .modal .modalContainer .right ul li a i {
-    font-size: 35px;
-    margin: 0 10px;
-  }
-
-  .modal .modalContainer .left img {
-    width: 80vh;
-    height: 300px;
-    border-radius: 20px;
-    object-fit: cover;
-    margin-top: 20vh;
-    box-shadow: 1px 1px 5px rgb(244, 127, 203);
-  }
-  .modal .modalContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    bottom: 20px;
-  }
-  .modal span {
-    font-size: 2vw;
-  }
-  .modal .modalContainer .right h1 {
-    display: none;
-  }
-  .modal .modalContainer .right {
-    height: auto;
-    position: relative;
-    bottom: 10vh;
-  }
-  #modalTitle {
-    font-size: 6vw;
-    margin: 20px 0 0 0;
-    text-align: center;
-  }
-  .modal .modalContainer .left {
-    margin: 0 auto;
-  }
-  .modal .modalContainer .right p {
-    font-size: 3vw;
-    margin: 20px;
-    line-height: 1.7;
-    text-align: center;
-  }
-  #closeModal {
-    font-size: 40px;
-    top: 10px;
-    right: 30px;
-  }
-  #desc1,
-  #desc2,
-  #desc3,
-  #desc4,
-  #desc5,
-  #desc6 {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .work {
-    flex-direction: column;
-    gap: 7vh;
-    margin-top: 10vh;
-    position: relative;
-  }
-  .work1,
-  .work2,
-  .work3,
-  .work4,
-  .work5,
-  .work6 {
-    height: 40vw;
-    min-height: 120px;
-    width: 85vw;
-    max-width: 100%;
-  }
-  .background_for_work {
-    font-size: 18vw;
-    top: 10vh;
-  }
-  .modal {
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-  .WorkBox .header {
-    font-size: 15vw;
-    bottom: 5vh;
-  }
-  .modal .modalContainer .right ul li a i {
-    font-size: 30px;
-    margin: 0 10px;
-  }
-  .modal .modalContainer .left img {
-    width: 40vh;
-    height: 200px;
-    border-radius: 20px;
-    object-fit: cover;
-    margin-top: 10vh;
-    box-shadow: 1px 1px 5px rgb(244, 127, 203);
-  }
-  .modal .modalContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    bottom: 20px;
-  }
-  .modal span {
-    font-size: 2vw;
-  }
-  .modal .modalContainer .right h1 {
-    display: none;
-  }
-  .modal .modalContainer .right {
-    height: auto;
-    position: relative;
-    bottom: 10vh;
-  }
-  #modalTitle {
-    font-size: 10vw;
-    margin: 20px 0 0 0;
-    text-align: center;
-  }
-  .modal .container .left {
-    margin: 0 auto;
-  }
-  #description {
-    font-size: 5vw;
-    margin: 20px;
-    line-height: 1.5;
-    text-align: center;
-  }
-  #closeModal {
-    font-size: 35px;
-    top: 20px;
-    right: 20px;
-  }
-  #desc1,
-  #desc2,
-  #desc3,
-  #desc4,
-  #desc5,
-  #desc6 {
-    display: none;
-  }
-  .modal::-webkit-scrollbar {
-    width: 5px;
-  }
-  .modal::-webkit-scrollbar-thumb {
-    background-color: rgba(140, 32, 133, 0.9);
-    border-radius: 5px;
-  }
-
-  .modal::-webkit-scrollbar-track {
-    background: rgb(0, 0, 0);
-  }
-  .onPhoto {
-    display: block;
-  }
-  .work1 img,
-  .work2 img,
-  .work3 img,
-  .work4 img,
-  .work5 img,
-  .work6 img {
-    filter: brightness(0.5);
-  }
-  #githubLink {
-    background-color: rgba(244, 127, 203, 0.6);
-    border-radius: 20px;
-    padding: 10px;
-    text-align: center;
-  }
 }
 .modal {
   display: none;
@@ -428,4 +194,114 @@
   color: rgb(180, 87, 148);
   transform: scale(1.2);
   transition: all 0.5s ease;
+}
+
+@media (max-width: 480px) {
+  .work {
+    flex-direction: column;
+    gap: 7vh;
+    margin-top: 10vh;
+    position: relative;
+  }
+  .work1,
+  .work2,
+  .work3 {
+    height: 40vw;
+    min-height: 120px;
+    width: 85vw;
+    max-width: 100%;
+  }
+  .background_for_work {
+    font-size: 18vw;
+    top: 5vh;
+  }
+  .modal {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .WorkBox .header {
+    font-size: 15vw;
+    bottom: 5vh;
+  }
+  .modal .modalContainer .right ul li a i {
+    font-size: 30px;
+    margin: 0 10px;
+  }
+  .modal .modalContainer .left img {
+    width: 40vh;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-top: 10vh;
+    box-shadow: 1px 1px 5px rgb(244, 127, 203);
+  }
+  .modal .modalContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+  }
+  .modal span {
+    font-size: 2vw;
+  }
+  .modal .modalContainer .right h1 {
+    display: none;
+  }
+  .modal .modalContainer .right {
+    height: auto;
+    position: relative;
+    bottom: 10vh;
+  }
+  #modalTitle {
+    font-size: 10vw;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  .modal .container .left {
+    margin: 0 auto;
+  }
+  #description {
+    font-size: 5vw;
+    margin: 20px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  #closeModal {
+    font-size: 35px;
+    top: 20px;
+    right: 20px;
+  }
+  #desc1,
+  #desc2,
+  #desc3 {
+    display: none;
+  }
+  .modal::-webkit-scrollbar {
+    width: 5px;
+  }
+  .modal::-webkit-scrollbar-thumb {
+    background-color: rgba(140, 32, 133, 0.9);
+    border-radius: 5px;
+  }
+
+  .modal::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+  }
+  .onPhoto {
+    display: block;
+    font-size: 8vw;
+    top:45px;
+  }
+  .work1 img,
+  .work2 img,
+  .work3 img {
+    filter: brightness(0.5);
+  }
+  #githubLink {
+    background-color: rgba(244, 127, 203, 0.6);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+  }
 }

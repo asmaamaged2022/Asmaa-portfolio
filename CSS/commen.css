@@ -28,7 +28,7 @@
   color: white;
   border: none;
   border-radius: 50%;
-  padding: 10px 15px;
+  padding: 20px 10px;
   cursor: pointer;
   z-index: 100;
   width: 50px;
@@ -50,4 +50,16 @@
   border-bottom: 2px solid white;
   margin: 2px 0;
   transform: rotate(-135deg);
+}
+@media (max-width: 480px) {
+  .toTop {
+    width:35px;
+    height: 35px;
+    right: 10px;
+  }
+  .toTop span {
+    width: 10px;
+    height: 10px;
+
+  }
 }

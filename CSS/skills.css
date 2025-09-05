@@ -54,7 +54,7 @@
 }
 .skills .skill h3 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size:25px;
 }
 .skills .skill .progress {
   background: rgba(255, 255, 255, 0.2);
@@ -68,4 +68,21 @@
   background:rgba(156, 65, 150, 0.9);
   width: 0;
   transition: all 1.5s linear;
+}
+@media (max-width: 480px) {
+  .skills .skillsContener{
+    width: 100%;
+    top:50vw;
+  }
+  .background_for_skills{
+    font-size: 25vw;
+  }
+  .skills .skillsHeader{
+    font-size: 12vw;
+    bottom: 25vw;
+  }
+  .skills .skill{
+    width: 90%;
+  }
+  
 }
