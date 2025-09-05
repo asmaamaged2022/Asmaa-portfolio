@@ -72,7 +72,7 @@
 @media (max-width: 480px) {
   .skills .skillsContener{
     width: 100%;
-    top:50vw;
+    top:35vw;
   }
   .background_for_skills{
     font-size: 23vw;
