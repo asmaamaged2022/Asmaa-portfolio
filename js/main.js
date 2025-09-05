@@ -12,7 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
-///
+////////////////////////////
 //to top
 let toTop = document.querySelector(".toTop");
 window.addEventListener("scroll", function () {
@@ -28,7 +28,8 @@ toTop.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
-
+////////////////////////////////////////////////////
+//home
 // home icon responsive
 document.addEventListener("DOMContentLoaded", function () {
   const bars = document.querySelector(".fa.fa-bars");
@@ -36,10 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function toggleLinks() {
     if (window.innerWidth <= 480) {
-      if (links.style.display === "inline-block") {
+      if (links.style.display === "flex") {
         links.style.display = "none";
       } else {
-        links.style.display = "inline-block";
+        links.style.display = "flex";
       }
     }
   }
@@ -95,6 +96,7 @@ function typeEffect() {
 }
 
 typeEffect();
+////////////////////////////////////////////////////
 // portofolio
 
 let work1 = document.getElementById("work1");
@@ -142,8 +144,8 @@ closeModal.addEventListener("click", function () {
   homeheader.style.display = "flex";
   toTop.style.display = "flex";
 });
+////////////////////////////////////////////////////
 ////skills
-
 let skillsSection = document.getElementById("skills");
 let spans = document.querySelectorAll(".progress span");
 
@@ -167,3 +169,4 @@ window.addEventListener("scroll", function () {
     });
   }
 });
+////////////////////////////////////////////////////

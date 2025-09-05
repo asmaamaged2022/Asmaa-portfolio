@@ -171,12 +171,12 @@
     font-size: 15vw;
     top: 5vh;
   }
-  .modal .container .right ul li a i {
+  .modal .modalContainer .right ul li a i {
     font-size: 35px;
     margin: 0 10px;
   }
 
-  .modal .container .left img {
+  .modal .modalContainer .left img {
     width: 80vh;
     height: 300px;
     border-radius: 20px;
@@ -184,7 +184,7 @@
     margin-top: 20vh;
     box-shadow: 1px 1px 5px rgb(244, 127, 203);
   }
-  .modal .container {
+  .modal .modalContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -194,10 +194,10 @@
   .modal span {
     font-size: 2vw;
   }
-  .modal .container .right h1 {
+  .modal .modalContainer .right h1 {
     display: none;
   }
-  .modal .container .right {
+  .modal .modalContainer .right {
     height: auto;
     position: relative;
     bottom: 10vh;
@@ -207,10 +207,10 @@
     margin: 20px 0 0 0;
     text-align: center;
   }
-  .modal .container .left {
+  .modal .modalContainer .left {
     margin: 0 auto;
   }
-  .modal .container .right p {
+  .modal .modalContainer .right p {
     font-size: 3vw;
     margin: 20px;
     line-height: 1.7;
@@ -261,11 +261,11 @@
     font-size: 15vw;
     bottom: 5vh;
   }
-  .modal .container .right ul li a i {
+  .modal .modalContainer .right ul li a i {
     font-size: 30px;
     margin: 0 10px;
   }
-  .modal .container .left img {
+  .modal .modalContainer .left img {
     width: 40vh;
     height: 200px;
     border-radius: 20px;
@@ -273,7 +273,7 @@
     margin-top: 10vh;
     box-shadow: 1px 1px 5px rgb(244, 127, 203);
   }
-  .modal .container {
+  .modal .modalContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -283,10 +283,10 @@
   .modal span {
     font-size: 2vw;
   }
-  .modal .container .right h1 {
+  .modal .modalContainer .right h1 {
     display: none;
   }
-  .modal .container .right {
+  .modal .modalContainer .right {
     height: auto;
     position: relative;
     bottom: 10vh;
@@ -383,13 +383,13 @@
   margin: 40px 0 0 0;
   text-align: center;
 }
-.modal .container h1 {
+.modal .modalContainer h1 {
   color: white;
   font-size: 40px;
   margin: 50px 0 0 0;
   text-align: center;
 }
-.modal .container {
+.modal .modalContainer {
   position: relative;
   display: flex;
   justify-content: center;
@@ -413,18 +413,18 @@
   padding: 20px;
   text-align: center;
 }
-.modal .container .right ul {
+.modal .modalContainer .right ul {
   list-style: none;
   display: flex;
   padding: 20px;
   justify-content: center;
 }
-.modal .container .right ul li i {
+.modal .modalContainer .right ul li i {
   margin-right: 20px;
   color: white;
   font-size: 35px;
 }
-.modal .container .right ul li:hover i {
+.modal .modalContainer .right ul li:hover i {
   color: rgb(180, 87, 148);
   transform: scale(1.2);
   transition: all 0.5s ease;

@@ -11,13 +11,43 @@
 
 ::-webkit-scrollbar-thumb {
   background-color: rgba(156, 65, 150, 0.9);
-border-radius: 5px;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
   background: rgb(0, 0, 0);
-
 }
-.html{
+.html {
   scroll-behavior: smooth;
+}
+.toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(111, 20, 125);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.toTop:hover {
+  background-color: rgb(155, 59, 160);
+}
+.toTop span {
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 2px 0;
+  transform: rotate(-135deg);
 }
