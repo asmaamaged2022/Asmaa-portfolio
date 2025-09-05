@@ -117,8 +117,8 @@ form button:hover {
   form textarea,
   form input[type="email"] {
     width: 95%;
-    height: 41px;
-    font-size: 5.9vw;
+    height: 40px;
+    font-size: 6vw;
   }
   form input::placeholder,
   form textarea::placeholder {
