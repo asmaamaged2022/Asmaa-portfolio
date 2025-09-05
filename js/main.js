@@ -34,7 +34,9 @@ toTop.addEventListener("click", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const bars = document.querySelector(".fa.fa-bars");
   const links = document.querySelector(".links");
-
+  if (window.innerWidth <= 480) {
+    links.style.display = "none";
+  }
   function toggleLinks() {
     if (window.innerWidth <= 480) {
       if (links.style.display === "flex") {
