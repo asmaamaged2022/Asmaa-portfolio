@@ -158,7 +158,7 @@ window.addEventListener("scroll", function () {
   let windowHeight = window.innerHeight;
 
   if (
-    scrollY + windowHeight >= sectionTop &&
+    scrollY + windowHeight >= sectionTop+200 &&
     scrollY <= sectionTop + sectionHeight
   ) {
     spans.forEach((span) => {
