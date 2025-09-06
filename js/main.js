@@ -71,7 +71,7 @@ window.addEventListener("scroll", Headercolor);
 ///
 // typing effect
 let nameElement = document.getElementById("name");
-let texts = ["I'm Asmaa", "I'm Programmer"];
+let texts = ["I'm A Software Engineer", "I'm A Web developer"];
 let textIndex = 0;
 let charIndex = 0;
 let deleting = false;
