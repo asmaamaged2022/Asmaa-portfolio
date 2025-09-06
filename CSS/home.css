@@ -246,7 +246,7 @@ a i:hover {
   }
   .home_section {
     position: relative;
-    transform: translateY(120%);
+    transform: translateY(90%);
   }
   .leftArrow {
     left: 20px;
